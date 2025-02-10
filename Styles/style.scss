@@ -8,11 +8,13 @@
 /*---Cores---*/
 $color-white: #ffffff;
 $color-black: #0e0e0e;
+$color-yellow: #ffef5f;
 $color-brown: #6D4B2E;
-$color-dark_brown: #593D25;
+$color-light_brown: #a37247;
+$color-dark_brown: #3a2718;
 
 body{
-    background-color: $color-black;
+    background-color: $color-dark_brown;
 }
 
 /*---Menu---*/
@@ -23,19 +25,26 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    li{
+        display: inline-block;
+    }
+    a{
+        color: $color-white;
+        text-decoration: none;
+        margin-right: 10px;
+        transition-duration: 0.5s;
+        &:hover{
+            color: $color-light_brown;
+        }
+    }
     button{
         padding: 10px 30px;
         border: none;
-        outline: none;
-        border-radius: 10px;
+        border-radius: 5px;
         color: $color-white;
-        background-color: $color-brown;
-        font-size: 1.2rem;
-        transition-duration: 0.5s;
+        font-size: 1rem;
+        background-color: $color-light_brown;
         cursor: pointer;
-        &:hover{
-            background-color: $color-dark_brown;
-        }
     }
 }
 
@@ -45,7 +54,7 @@ body{
     align-items: center;
     justify-content: center;
     color: $color-white;
-    gap: 10px;
+    gap: 5px;
     img{
         width: 50px;
         height: 50px;
@@ -63,6 +72,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-image: url(../Img/banner.jpg);
     background-position: center;
     background-size: cover;
@@ -70,6 +80,11 @@ body{
         font-size: 5rem;
         font-weight: 400;
         color: $color-white;
+        margin-left: 10px;
+    }
+    p{
+        color: $color-white;
+        font-size: 1.5rem;
     }
 }
 
@@ -79,7 +94,8 @@ body{
     padding: 20px;
     h2{
         font-size: 1.7rem;
-        color: $color-brown;
+        font-weight: 400;
+        color: $color-white;
     }
 }
 
@@ -90,38 +106,74 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .card{
     width: 30%;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    background-color: $color-white;
+    background-color: $color-black;
+    border: 2px solid $color-light_brown;
+    color: $color-white;
     img{
         width: 100%;
         height: 40vh;
         object-fit: cover;
     }
-    h3, h4{
+    h3{
         font-size: 1.7rem;
         font-weight: 400;
         margin-top: 10px;
     }
+    p{
+        font-size: 1rem;
+        text-align: justify;
+    }
     button{
-        width: 100%;
-        height: 50px;
+        width: 40%;
+        height: 40px;
         border: none;
         outline: none;
         margin-top: 10px;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         color: $color-white;
-        background-color: $color-brown;
+        background-color: transparent;
+        border: 1px solid $color-light_brown;
         transition-duration: 0.5s;
+        border-radius: 5px;
         cursor: pointer;
         &:hover{
-            background-color: $color-dark_brown;
+            background-color: $color-light_brown;
         }
+    }
+}
+
+/*---Estrelas---*/
+.estrelas{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    i{
+        font-size: 1.3rem;
+        color: $color-yellow;
+    }
+}
+
+/*---Copyright---*/
+.copyright{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-black;
+    h4{
+        color: $color-white;
+        font-weight: 400;
+        font-size: 1.4rem;
     }
 }
