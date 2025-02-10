@@ -1,17 +1,11 @@
+@import './colors';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/*---Cores---*/
-$color-white: #ffffff;
-$color-black: #0e0e0e;
-$color-yellow: #ffef5f;
-$color-brown: #6D4B2E;
-$color-light_brown: #a37247;
-$color-dark_brown: #3a2718;
 
 body{
     background-color: $color-dark_brown;
