@@ -42,6 +42,14 @@ body{
         background-color: $color-light_brown;
         cursor: pointer;
     }
+    span{
+        padding: 10px 10px;
+        border-radius: 10px;
+        color: $color-white;
+        background-color: $color-light_brown;
+        cursor: pointer;
+        display: none;
+    }
 }
 
 /*---Logo---*/
@@ -176,6 +184,30 @@ body{
 
 /*---Responsividade---*/
 @media screen and (max-width: 768px) {
+    .menu{
+        span{
+            display: block;
+        }
+        ul{
+            width: 35%;
+            display: none;
+            right: 0;
+            top: 10%;
+            position: absolute;
+            background-color: $color-dark_brown;
+            padding: 5px;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        a{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
     .banner{
         height: 30vh;
         h1{
