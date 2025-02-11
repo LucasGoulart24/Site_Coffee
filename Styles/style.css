@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /*---Cores---*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   margin-right: 10px;
+  margin-left: 10px;
   transition-duration: 0.5s;
 }
 .menu a:hover {
@@ -170,4 +172,20 @@ body {
   color: #ffffff;
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 30vh;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .card {
+    width: 90%;
+  }
+  .card button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
