@@ -72,11 +72,8 @@ body {
 .banner {
   width: 100%;
   height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url(../Img/banner.jpg);
+  padding: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../Img/banner.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -84,11 +81,23 @@ body {
   font-size: 5rem;
   font-weight: 400;
   color: #ffffff;
-  margin-left: 10px;
 }
 .banner p {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  width: 50%;
+  text-align: justify;
+  margin-top: 10px;
+}
+.banner button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #a37247;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 /*---Titulo---*/
@@ -206,10 +215,17 @@ body {
     margin-bottom: 10px;
   }
   .banner {
-    height: 30vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .banner h1 {
     font-size: 2rem;
+  }
+  .banner p {
+    width: 100%;
   }
   .card {
     width: 90%;
