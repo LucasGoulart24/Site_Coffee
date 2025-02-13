@@ -1,0 +1,64 @@
+@import './colors';
+
+/*---Contato---*/
+.contato{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-white;
+    h1{
+        font-size: 5rem;
+        font-weight: 400;
+    }
+    p{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+}
+
+/*---Icones---*/
+.icones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 1rem;
+    i{
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-brown;
+        border: 2px solid $color-light_brown;
+        border-radius: 50px;
+        font-size: 3.3rem;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        &:hover{
+            background-color: $color-light_brown;
+        }
+    }
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 768px) {
+    .contato{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .icones{
+        i{
+            width: 70px;
+            height: 70px;
+            font-size: 3rem;
+        }
+    }
+}

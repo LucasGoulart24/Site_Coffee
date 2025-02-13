@@ -1,4 +1,119 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*---Cores---*/
+/*---Titulo---*/
+.titulo2 {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo2 h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/*---Serviços---*/
+.servicos {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.servico {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.servico img {
+  width: 100%;
+  height: 40vh;
+}
+.servico h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.servico p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 768px) {
+  .servico {
+    width: 70%;
+  }
+}
+/*---Cores---*/
+/*---Contato---*/
+.contato {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.contato h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+.contato p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/*---Icones---*/
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 1rem;
+}
+.icones i {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6D4B2E;
+  border: 2px solid #a37247;
+  border-radius: 50px;
+  font-size: 3.3rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.icones i:hover {
+  background-color: #a37247;
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 768px) {
+  .contato h1 {
+    font-size: 4rem;
+  }
+  .contato p {
+    font-size: 1.2rem;
+  }
+  .icones i {
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+  }
+}
 /*---Cores---*/
 * {
   margin: 0;

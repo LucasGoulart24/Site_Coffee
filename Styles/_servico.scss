@@ -1,0 +1,57 @@
+@import './colors';
+
+/*---Titulo---*/
+.titulo2{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 3rem;
+        font-weight: 400;
+        color: $color-white;
+    }
+}
+
+/*---Serviços---*/
+.servicos{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.servico{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $color-white;
+    img{
+        width: 100%;
+        height: 40vh;
+    }
+    h3{
+        font-size: 2rem;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    p{
+        font-size: 1.3rem;
+        margin-top: 10px;
+        text-align: justify;
+    }
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 768px) {
+    .servico{
+        width: 70%;
+    }
+}
