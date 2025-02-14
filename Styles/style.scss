@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import './servico';
 @import './contato';
+@import './login';
 @import './colors';
 
 *{
@@ -30,10 +31,6 @@ body{
         text-decoration: none;
         margin-right: 10px;
         margin-left: 10px;
-        transition-duration: 0.5s;
-        &:hover{
-            color: $color-light_brown;
-        }
     }
     button{
         padding: 10px 30px;
